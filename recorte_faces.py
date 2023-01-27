@@ -1,5 +1,6 @@
 import cv2
 import os
+from tqdm import tqdm
 
 # Locas das fotos para serem processadas
 path_imgs_processar = "processar/"
@@ -14,8 +15,14 @@ imgs = os.listdir(path_imgs_processar)
 # Contador de imagens processadas
 contador_img = 1
 
+# Tqdm
+t = tqdm(imgs)
+
 # Para cada imagem na origem
-for img in imgs:
+for img in t:
+
+    # Arquivo que está sendo processado
+    t.set_description(f'Arquivo: {img}')
 
     # Carrega a imagem
     imagem = cv2.imread(path_imgs_processar + img)
