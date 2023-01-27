@@ -3,7 +3,7 @@ Este projeto é uma ferramenta em Python que permite recortar as faces das pesso
 
 ## Pré-requisitos
 - Python 3.x instalado em sua máquina.
-- As bibliotecas presentas no arquivo [requirements.txt](requirements.txt).
+- As bibliotecas presentes no arquivo [requirements.txt](requirements.txt).
 
 ## Como usar
 1. Faça o clone do projeto para sua máquina local.
